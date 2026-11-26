@@ -8,7 +8,11 @@ def home():
 
 @app.route("/get")
 def getApi():
-    return 200
+    return "This get endpoint"
+
+@app.route("/put")
+def putApi():
+    return "This put endpoint"
 
 if __name__ == "__main__":
     app.run(debug=True)
