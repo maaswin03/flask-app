@@ -6,13 +6,5 @@ app = Flask(__name__)
 def home():
     return "Hello from Aswin !!"
 
-@app.route("/get")
-def getApi():
-    return "This get endpoint"
-
-@app.route("/put")
-def putApi():
-    return "This put endpoint"
-
 if __name__ == "__main__":
     app.run(debug=True)
