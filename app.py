@@ -6,5 +6,9 @@ app = Flask(__name__)
 def home():
     return "Hello from Aswin !!"
 
+@app.route("/get")
+def getApi():
+    return 200
+
 if __name__ == "__main__":
     app.run(debug=True)
